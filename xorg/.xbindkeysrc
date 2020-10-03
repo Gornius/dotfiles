@@ -1,0 +1,24 @@
+# Increase volume
+"pamixer -i 2 && kill -44 $(pidof dwmblocks)"
+   XF86AudioRaiseVolume
+# Decrease volume
+"pamixer -d 2 && kill -44 $(pidof dwmblocks)"
+   XF86AudioLowerVolume
+
+# Increase brightness
+"xbacklight -inc 5"
+   XF86MonBrightnessUp
+# Decrease brightess
+"xbacklight -dec 5"
+   XF86MonBrightnessDown
+
+# Flameshot take screenshot
+"flameshot gui"
+    Mod2+Mod4 + Print
+# Screen lock"
+"slock"
+    Mod2+Mod4 + F1
+
+# Toggle picom
+"pkill picom && kill -45 $(pidof dwmblocks) || picom & kill -45 $(pidof dwmblocks)"
+    Mod2+Mod4 + grave
