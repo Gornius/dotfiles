@@ -1,0 +1,12 @@
+rofi.theme: /usr/share/rofi/themes/gruvbox-dark-soft.rasi
+rofi.icon-theme: Papirus
+rofi.location: 0
+rofi.columns: 1
+rofi.bw: 0
+rofi.lines: 10
+rofi.display-drun: Run
+rofi.width: 33
+rofi.font: Roboto Bold 12
+rofi.show-icons: true
+rofi.hide-scrollbar: false
+rofi.sep: '-'
