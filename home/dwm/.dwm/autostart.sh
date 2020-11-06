@@ -1,7 +1,7 @@
 #!/bin/sh
 xss-lock -l slock &
-picom &
 nitrogen --restore &
+picom &
 xbindkeys &
 dwmblocks &
 flameshot &
