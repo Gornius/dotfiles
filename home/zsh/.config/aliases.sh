@@ -4,6 +4,9 @@
 # You can import it using:
 # source $HOME/.config/aliases.sh
 
+[ -f $HOME/.config/private-aliases.sh ] && \
+    source $HOME/.config/private-aliases.sh
+
 # Edit i3conf
 alias vii3='vim $HOME/.config/i3/config'
 
@@ -21,27 +24,4 @@ alias ls='ls --color'
 # Always try to nest dirs
 alias mkdir='mkdir -pv'
 alias sumake='make && sudo make install clean'
-
-# Open with sudo plugin vim
-svim() {
-	nvim sudo:$@
-}
-
-# Replace vim with nvim
-vim() {
-	nvim $@
-}
-
-# Download music from youtube
-ytdm() {
-	youtube-dl -f 140 "ytsearch1:$*"
-}
-
-:q() {
-exit
-}
-
-# Source private aliases (if file exists) 
-if [ -f $HOME/.config/private-aliases.sh ]; then
-    source $HOME/.config/private-aliases.sh;
-fi
+alias vim='nvim'

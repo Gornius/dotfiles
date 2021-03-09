@@ -6,4 +6,5 @@ export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd' # Less ugly java fonts
 #export QT_STYLE_OVERRIDE="kvantum-dark"
 #export XDG_CURRENT_DESKTOP=KDE
 export QT_QPA_PLATFORMTHEME="qt5ct"
+export MOZ_X11_EGL=1
 #export LIBVA_DRIVER_NAME=iHD

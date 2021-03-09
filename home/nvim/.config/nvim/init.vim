@@ -200,6 +200,11 @@ autocmd BufReadPost *
   \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
   \ |   exe "normal! g`\""
   \ | endif
+
+" Change cursor shape
+autocmd InsertEnter * set cul
+autocmd InsertLeave * set nocul
+
 " }}}
 " coc.nvim {{{
 " if hidden is not set, TextEdit might fail.
